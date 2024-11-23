@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Survey</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .hidden { display: none; }
+        .form_radio_btn {
+            width: 47%;
+            height: 45px;
+            border: 1px solid #EAE7E7;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .form_radio_btn input[type=radio] {
+            display: none;
+        }
+        .form_radio_btn label {
+            display: block;
+            border-radius: 10px;
+            text-align: center;
+            height: 100%;
+            line-height: 45px;
+            background: #F9FAFC;
+            color: #666;
+            cursor: pointer;
+        }
+        .form_radio_btn input[type=radio]:checked + label {
+            background: #184DA0;
+            color: #fff;
+        }
+        button {
+            margin-top: 15px;
+            width: 80px;
+            height: 35px;
+            background-color: #184DA0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="survey">
+        <!-- 마지막 질문 -->
+        <div id="q5">
+            <h3>5. 가장 중요하게 생각하는 기준은 무엇인가요?</h3>
+            <div class="form_radio_btn">
+                <input type="radio" id="priority-performance" name="priority" value="performance">
+                <label for="priority-performance">성능이 가장 뛰어난 제품</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="priority-lightweight" name="priority" value="lightweight">
+                <label for="priority-lightweight">가벼운 제품</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="priority-storage" name="priority" value="storage">
+                <label for="priority-storage">저장공간이 큰 제품</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="priority-display" name="priority" value="display">
+                <label for="priority-display">화질 좋은 제품</label>
+            </div>
+            <button onclick="submitSurvey()">제출</button>
+        </div>
+    </div>
+
+    <script>
+        function submitSurvey() {
+            // 선택된 답 가져오기
+            const selected = document.querySelector('input[name="priority"]:checked');
+            if (!selected) {
+                alert("마지막 질문의 옵션을 선택해주세요!");
+                return;
+            }
+
+            // 선택된 값에 따라 페이지 이동
+            const answer = selected.value;
+            if (answer === "performance") {
+                window.location.href = "performance.html"; // 성능 관련 페이지
+            } else if (answer === "lightweight") {
+                window.location.href = "lightweight.html"; // 가벼운 제품 페이지
+            } else if (answer === "storage") {
+                window.location.href = "storage.html"; // 저장공간 관련 페이지
+            } else if (answer === "display") {
+                window.location.href = "display.html"; // 화질 관련 페이지
+            } else {
+                alert("알 수 없는 선택입니다."); // 기본 처리
+            }
+        }
+    </script>
+</body>
+</html>
