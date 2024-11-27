@@ -257,38 +257,65 @@
     white-space: nowrap;
   }
   
-  .element-light .heading-2 {
+ .element-light .heading-2 {
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start;  
+    align-items: center;  
     position: absolute;
     width: 800px;
-    height: 527px;
+    height: auto; 
     top: 236px;
     left: 200px;
-  }
-  
-  .element-light .text-wrapper-2 {
-    width: 377px;
-    height: 600px;
-    transform: translate(-50%, -50%);
+    gap: 20px; 
+}
+
+
+.element-light .frame {
+  text-align: left;  
+  font-family: "Roboto-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #1a1a1a;
+  font-size: 36px;
+  line-height: 45px;
+  margin-left: -10px;  
+}
+
+
+.element-light .text-wrapper-2 {
     font-family: "Roboto-ExtraBold", Helvetica;
     font-weight: 800;
     color: #1a1a1a;
     font-size: 36px;
-    text-align: center;
     line-height: 45px;
-    position: absolute;
-    top:50%;
-    left:50%;
     letter-spacing: 0;
-  }
-  
-  .element-light .element {
-    position: absolute;
-    width: 300px;
-    height: 274px;
-    top: 37px;
-    left: 261px;
-    object-fit: cover;
-  }
+    margin-bottom: 10px;  
+}
+
+
+.element-light .element {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+
+.element-light .frame-2 {
+  text-align: left;  
+  font-family: "Roboto-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #1a1a1a;
+  font-size: 36px;
+  line-height: 45px;
+  margin-left: -100px;  
+}
+
+
+.element-light .i-i {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
   
   .element-light .background {
     position: absolute;
