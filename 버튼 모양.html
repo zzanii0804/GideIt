@@ -4,58 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .button-6 {
+        .button-35 {
             align-items: center;
-            background-color: #FFFFFF;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            border-radius: .25rem;
-            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
             box-sizing: border-box;
-            color: rgba(0, 0, 0, 0.85);
+            color: #121212;
             cursor: pointer;
             display: inline-flex;
-            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-            font-size: 16px;
-            font-weight: 600;
+            flex: 1 1 auto;
+            font-family: Inter,sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
             justify-content: center;
-            line-height: 1.25;
+            line-height: 1;
             margin: 0;
-            min-height: 3rem;
-            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-            position: relative;
+            outline: none;
+            padding: 1rem 1.2rem;
+            text-align: center;
             text-decoration: none;
-            transition: all 250ms;
+            transition: box-shadow .2s,-webkit-box-shadow .2s;
+            white-space: nowrap;
+            border: 0;
             user-select: none;
             -webkit-user-select: none;
             touch-action: manipulation;
-            vertical-align: baseline;
-            width: auto;
-        }           
-            
-        .button-6:hover,
-        .button-6:focus {
-          border-color: rgba(0, 0, 0, 0.15);
-          box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-          color: rgba(0, 0, 0, 0.65);
-        }
-
-        .button-6:hover {
-          transform: translateY(-1px);
-        }
-
-        .button-6:active {
-          background-color: #F0F0F1;
-          border-color: rgba(0, 0, 0, 0.15);
-          box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-          color: rgba(0, 0, 0, 0.65);
-          transform: translateY(0);
-        }
-    </style>
+            }            
+        .utton-35:hover {
+            box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+            }    </style>
 
     <title>Document</title>
 </head>
 <body>
-    
-<button class="button-6" role="button">Button 6</button>
+    <button class="button-35" role="button">Button 35</button>
 </body>
 </html>
