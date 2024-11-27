@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="surveyRadioButtons.css">
+    <script src="surveyRadioButtons.js"></script>
+</head>
+<body>
+    <div id="survey">
+        <!-- 질문 1 -->
+        <div class="question" id="q1">
+            <h3>1. 어떤 용도의 노트북을 찾으시나요?</h3>
+            <div class="form_radio_btn">
+                <input type="radio" id="purpose-low" name="purpose" value="low">
+                <label for="purpose-low">문서 작업이나 학습용</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="purpose-mid" name="purpose" value="mid">
+                <label for="purpose-mid">간단한 영상 편집, 중급사양의 게임용</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="purpose-high" name="purpose" value="high">
+                <label for="purpose-high">고사양 게임, 그래픽 작업용</label>
+            </div>
+            <div>
+                <button onclick="nextQuestion('q1', 'q2', 'purpose')">다음</button>
+            </div>
+        </div>
+
+        <!-- 질문 2 -->
+        <div class="question hidden" id="q2">
+            <h3>2. 원하는 가격대를 선택해주세요</h3>
+            <div class="form_radio_btn">
+                <input type="radio" id="price-100 or less" name="price" value="100 or less">
+                <label for="price-100 or less">100만원 이하</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="price-150" name="price" value="150">
+                <label for="price-150">최대 150만원</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="price-150 or more" name="price" value="150 or more">
+                <label for="price-150 or more">150만원 이상</label>
+            </div>
+            <div>
+                <button onclick="nextQuestion('q2', 'q3', 'price')">다음</button>
+            </div>
+        </div>
+
+        <!-- 질문 3 -->
+        <div class="question hidden" id="q3">
+            <h3>3. 선호하는 제조사가 있으신가요?</h3>
+            <div class="form_radio_btn">
+                <input type="radio" id="maker-domestic" name="maker" value="domestic">
+                <label for="maker-domestic">A/S 걱정 없는 국내 대기업</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="maker-no-preference" name="maker" value="no-preference">
+                <label for="maker-no-preference">제조사 상관 없음</label>
+            </div>
+            <div>
+                <button onclick="nextQuestion('q3', 'q4', 'maker')">다음</button>
+            </div>
+        </div>
+
+        <!-- 질문 4 -->
+        <div class="question hidden" id="q4">
+            <h3>4. 선호하는 화면 크기는 어떻게 되시나요?</h3>
+            <div class="form_radio_btn">
+                <input type="radio" id="monitor-14" name="monitor" value="14">
+                <label for="monitor-14">14인치대 이하</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="monitor-15" name="monitor" value="15">
+                <label for="monitor-15">15인치대 이상</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="monitor-no-preference" name="monitor" value="no-preference">
+                <label for="monitor-no-preference">크기는 상관 없음</label>
+            </div>
+            <div>
+                <button onclick="nextQuestion('q4', 'q5', 'monitor')">다음</button>
+            </div>
+        </div>
+
+        <!-- 질문 5 -->
+        <div class="question hidden" id="q5">
+            <h3>5. 가장 중요하게 생각하는 기준은 무엇인가요?</h3>
+            <div class="form_radio_btn">
+                <input type="radio" id="priority-performance" name="priority" value="performance">
+                <label for="priority-performance">성능이 가장 뛰어난 제품</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="priority-lightweight" name="priority" value="lightweight">
+                <label for="priority-lightweight">가벼운 제품</label>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" id="priority-display" name="priority" value="display">
+                <label for="priority-display">화질 좋은 제품</label>
+            </div>
+            <div>
+                <button onclick="submitSurvey()">제출</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 설문 완료 화면 -->
+    <div id="result" class="hidden">
+        <h3>설문이 완료되었습니다! 감사합니다.</h3>
+    </div>
+</body>
+</html>
