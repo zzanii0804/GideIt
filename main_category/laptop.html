@@ -1,58 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide It</title>
-</head>
-<body>
-    <body>
-        <div class="container">
-          <div class="div">
-            <header class="header">
-              <div class="overlap-group">
-                <div class="section">
-                  <div class="background-border">
-                    <div class="input">
-                      <div class="div-wrapper"><div class="text-wrapper">검색어를 입력하세요</div></div>
-                    </div>
-                    <img class="SVG" src="image/돋보기.png" />
-                  </div>
-                </div>
-                <div class="section-list">
-                  <div class="item"><div class="link"><a href="" class="link-stands">회원가입</a> | <a href="" class="link-stands">로그인</a></div></div>
-                </div>
-                <a href="guideIt_mainpage.html"><img src="image/로고.png" class="logo"></a>
-              </div>
-            </header>
-            <div class="div-2">
-              <div class="item-2">
-                <div class="heading"><a href="" class="category">카테고리</a></div>
-              </div>
+    <link rel="stylesheet" href="/css/laptop.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="div">
+
+        <!-- 헤더 섹션 -->
+        <header class="header">
+          <div class="overlap-group">
+            <a href="../index.html"><img src="../image/로고.png" class="logo"></a>
+          </div>
+        </header>
+
+        <!-- 본문 섹션 -->
+        <div class="div-2">
+          
+          <!--메뉴바-->
+          <div class="item-2">
+            <ul class="navbar">
+              <li><button class="button-menu m" role="button" onclick="nextGuide('laptop_guide')"><span class="main-manu">구매가이드</span></button></li>
+              <li><button class="button-menu" role="button" ><span class="main-manu">맞춤추천</span></button></li>
+            </ul>
+
+            <ul class="navbar-1">
+              <li><button class="button-menu" role="button" onclick="nextGuide('cpuRam')"><span class="guide-menu">CPU, 메모리</span></button></li>
+              <li><button class="button-menu" role="button" onclick="nextGuide('gpuStorage')"><span class="guide-menu">그래픽카드, 저장장치</span></button></li>
+              <li><button class="button-menu" role="button" onclick="nextGuide('display')"><span class="guide-menu">화면</span></button></li>
+              <li><button class="button-menu" role="button" onclick="nextGuide('HueDaeSung')"><span class="guide-menu">휴대성</span></button></li>
+              <li><button class="button-menu" role="button" onclick="nextGuide('PyeonUiheSung')"><span class="guide-menu">사용편의</span></button></li>
+            </ul>
+          </div>
+
+          <!--메인 콘텐츠-->
+          <div>
+            <div class="guide" id="laptop_guide"> <!--노트북 구매 가이드 메인-->
+              <img class="category-image" src="../image/노트북.png" />
+              <div class="text-wrapper-2">노트북 구매 가이드</div>
             </div>
-            <footer class="footer">
-              <div class="list-wrapper">
-                <div class="list">
-                  <div class="item-list">
-                    <div class="item-3">
-                      <div class="text-wrapper-5">팀명</div>
-                      <div class="guide-it">Guide It</div>
-                    </div>
-                    <div class="item-4">
-                      <div class="text-wrapper-6">팀원</div>
-                      <div class="text-wrapper-7">권혁찬, 정현우</div>
-                    </div>
-                    <div class="item-5">
-                      <div class="text-wrapper-8">주소</div>
-                      <p class="address">서울특별시 서대문구 가좌로 134, 명지전문대학교</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </footer>
+          
+            <div class="guide hidden" id="cpuRam"> <!--cpu, 메모리-->
+                <h1>cpu</h1>
+            </div>
+          
+            <div class="guide hidden" id="gpuStorage"> <!--그래픽카드, 저장장치-->
+                <h1>그래픽카드</h1>
+            </div>
+          
+            <div class="guide hidden" id="display"> <!--화면-->
+                <h1>화면</h1>
+            </div>
+
+            <div class="guide hidden" id="HueDaeSung"> <!--휴대성-->
+                <h1>휴대성</h1>
+            </div>
+          
+            <div class="guide hidden" id="PyeonUiheSung"> <!--사용 편의성-->
+                <h1>사용편의성</h1>
+            </div>
           </div>
         </div>
-      </body>
-    </html>
-</body>
+
+        <!-- 푸터 섹션 -->
+        <footer class="footer">
+          <div class="list-wrapper">
+            <div class="list">
+              <div class="item-list">
+                <div class="item-3">
+                  <div class="text-wrapper-5">팀명</div> 
+                  <div class="guide-it">Guide It</div>
+                </div>
+                <div class="item-4">
+                  <div class="text-wrapper-6">팀원</div>
+                  <div class="text-wrapper-7">권혁찬, 정현우</div>
+                </div>
+                <div class="item-5">
+                  <div class="text-wrapper-8">주소</div>
+                  <p class="address">서울특별시 서대문구 가좌로 134, 명지전문대학교</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        
+      </div>
+    </div>
+
+    <script>
+      function nextGuide(next) {
+          // 모든 가이드 페이지를 숨김
+          document.querySelectorAll(".guide").forEach((guide) => {
+              guide.classList.add("hidden");
+          });
+
+          // 선택한 페이지만 표시
+          document.getElementById(next).classList.remove("hidden");
+      }
+
+  </script>
+  </body>
+</html>
+
 </html>
