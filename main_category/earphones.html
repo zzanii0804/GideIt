@@ -1,11 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Guide It</title>
+    <link rel="stylesheet" href="guide.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="div">
+
+        <!-- 헤더 섹션 -->
+        <header class="header">
+          <div class="overlap-group">
+            <a href="../index.html"><img src="../image/로고.png" class="logo"></a>
+          </div>
+        </header>
+
+        <!-- 본문 섹션 -->
+        <div class="div-2">
+          
+          <!--메뉴바-->
+          <div class="item-2">
+            <ul class="navbar">
+              <li><button class="button-menu m" role="button" onclick="nextGuide('laptop_guide')"><span class="main-manu">구매가이드</span></button></li>
+              <li><button class="button-menu" role="button" ><span class="main-manu">맞춤추천</span></button></li>
+            </ul>
+
+            <ul class="navbar-1">
+              <li><button class="button-menu" role="button" onclick="nextGuide('cpuRam')"><span class="guide-menu">CPU, 메모리</span></button></li>
+              <li><button class="button-menu" role="button" onclick="nextGuide('gpuStorage')"><span class="guide-menu">그래픽카드, 저장장치</span></button></li>
+              <li><button class="button-menu" role="button" onclick="nextGuide('display')"><span class="guide-menu">화면</span></button></li>
+              <li><button class="button-menu" role="button" onclick="nextGuide('HueDaeSung')"><span class="guide-menu">휴대성</span></button></li>
+              <li><button class="button-menu" role="button" onclick="nextGuide('PyeonUiheSung')"><span class="guide-menu">사용편의</span></button></li>
+            </ul>
+          </div>
+
+          <!--메인 콘텐츠-->
+          <div>
+            <div class="guide" id="laptop_guide"> <!--노트북 구매 가이드 메인-->
+              <img class="category-image" src="../image/블루투스이어폰.png" />
+              <div class="text-wrapper-2">블루투스이어폰 구매 가이드</div>
+            </div>
+          
+            <div class="guide hidden" id="cpuRam"> <!--cpu, 메모리-->
+                <div class="bonMun">
+                    <h1>1대제목</h1>
+                    <br><br><br>
+                    <span>
+                      <h2>1. 중제목</h2> <!--1. 화면크기-->
+                      <p style="color: rgba(0, 0, 0, 0.596);">
+                        <b>
+                          설명
+                        </b>
+                      </p>
     
-</body>
+                      <ul>
+                        <br><br> <br>
+                        <li>
+                          <h3>
+                            소제목                        
+                          </h3>
+                        </li>
+                        <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
+                        <span>
+                          본문
+                        </span>  
+                      </ul>
+                    </span>
+                </div>
+            </div>
+          
+            <div class="guide hidden" id="gpuStorage"> <!--그래픽카드, 저장장치-->
+                <div class="bonMun">
+                    <h1>2대제목</h1>
+                    <br><br><br>
+                    <span>
+                      <h2>1. 중제목</h2> <!--1. 화면크기-->
+                      <p style="color: rgba(0, 0, 0, 0.596);">
+                        <b>
+                          설명
+                        </b>
+                      </p>
+    
+                      <ul>
+                        <br><br> <br>
+                        <li>
+                          <h3>
+                            소제목                        
+                          </h3>
+                        </li>
+                        <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
+                        <span>
+                          본문
+                        </span>  
+                      </ul>
+                    </span>
+                </div>
+            </div>
+          
+            <div class="guide hidden" id="display"> <!--화면-->
+                <div class="bonMun">
+                    <h1>3대제목</h1>
+                    <br><br><br>
+                    <span>
+                      <h2>1. 중제목</h2> <!--1. 화면크기-->
+                      <p style="color: rgba(0, 0, 0, 0.596);">
+                        <b>
+                          설명
+                        </b>
+                      </p>
+    
+                      <ul>
+                        <br><br> <br>
+                        <li>
+                          <h3>
+                            소제목                        
+                          </h3>
+                        </li>
+                        <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
+                        <span>
+                          본문
+                        </span>  
+                      </ul>
+                    </span>
+                </div>
+            </div>
+
+            <div class="guide hidden" id="HueDaeSung"> <!--휴대성-->
+                <div class="bonMun">
+                    <h1>4대제목</h1>
+                    <br><br><br>
+                    <span>
+                      <h2>1. 중제목</h2> <!--1. 화면크기-->
+                      <p style="color: rgba(0, 0, 0, 0.596);">
+                        <b>
+                          설명
+                        </b>
+                      </p>
+    
+                      <ul>
+                        <br><br> <br>
+                        <li>
+                          <h3>
+                            소제목                        
+                          </h3>
+                        </li>
+                        <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
+                        <span>
+                          본문
+                        </span>  
+                      </ul>
+                    </span>
+                </div>
+            </div>
+          
+            <div class="guide hidden" id="PyeonUiheSung"> <!--사용 편의성-->
+                <div class="bonMun">
+                    <h1>5대제목</h1>
+                    <br><br><br>
+                    <span>
+                      <h2>1. 중제목</h2> <!--1. 화면크기-->
+                      <p style="color: rgba(0, 0, 0, 0.596);">
+                        <b>
+                          설명
+                        </b>
+                      </p>
+    
+                      <ul>
+                        <br><br> <br>
+                        <li>
+                          <h3>
+                            소제목                        
+                          </h3>
+                        </li>
+                        <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
+                        <span>
+                          본문
+                        </span>  
+                      </ul>
+                    </span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 푸터 섹션 -->
+        <footer class="footer">
+          <div class="list-wrapper">
+            <div class="list">
+              <div class="item-list">
+                <div class="item-3">
+                  <div class="text-wrapper-5">팀명</div> 
+                  <div class="guide-it">Guide It</div>
+                </div>
+                <div class="item-4">
+                  <div class="text-wrapper-6">팀원</div>
+                  <div class="text-wrapper-7">권혁찬, 정현우</div>
+                </div>
+                <div class="item-5">
+                  <div class="text-wrapper-8">주소</div>
+                  <p class="address">서울특별시 서대문구 가좌로 134, 명지전문대학교</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        
+      </div>
+    </div>
+
+    <script>
+      function nextGuide(next) {
+          // 모든 가이드 페이지를 숨김
+          document.querySelectorAll(".guide").forEach((guide) => {
+              guide.classList.add("hidden");
+          });
+
+          // 선택한 페이지만 표시
+          document.getElementById(next).classList.remove("hidden");
+      }
+
+  </script>
+  </body>
 </html>
