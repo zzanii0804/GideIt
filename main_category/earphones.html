@@ -212,7 +212,596 @@
               </div>
             </div>
           </div>
+        </footer><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide It</title>
+    <link rel="stylesheet" href="guide.css"/>
+    <link rel="stylesheet" href="surveyRadioButtons.css"/>
+    <script src="surveyRadioButtons.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="div">
+
+        <!-- 헤더 섹션 -->
+        <header class="header">
+          <div class="overlap-group">
+            <a href="../index.html"><img src="../image/로고.png" class="logo"></a>
+          </div>
+        </header>
+
+        <!-- 본문 섹션 -->
+        <div class="div-2">
+          
+            <!--메뉴바-->
+            <div class="item-2">
+                <ul class="navbar">
+                  <li><button class="button-menu" role="button" onclick="nextGuide('earphones-guide')"><span class="main-manu">구매가이드</span></button></li>
+                  <li><button class="button-menu" role="button" onclick="nextGuide('recommend')" ><span class="main-manu">맞춤추천</span></button></li>
+                </ul>
+
+                <ul class="navbar-1">
+                  <li><button class="button-menu" role="button" onclick="nextGuide('cpuRam')"><span class="guide-menu">CPU, 메모리</span></button></li>
+                  <li><button class="button-menu" role="button" onclick="nextGuide('gpuStorage')"><span class="guide-menu">그래픽카드, 저장장치</span></button></li>
+                  <li><button class="button-menu" role="button" onclick="nextGuide('display')"><span class="guide-menu">화면</span></button></li>
+                
+                </ul>
+            </div>
+
+              <!--메인 콘텐츠-->
+            <div>
+                <div class="guide" id="earphones-guide"> <!--노트북 구매 가이드 메인-->
+                  <img class="category-image" src="../image/블루투스이어폰.png" />
+                  <h2><div class="text-wrapper-2">블루투스 구매 가이드</div></h2><br><br>
+                  <div class="bonMun">
+                    <span>
+                        스마트폰에서 이어폰 단자가 없어졌을 때 모두가 말도 안 되는 일이라 생각했고,<br>
+                        처음 무선 이어폰이 나왔을 때에는 콩나물이라면서 비웃기도 했는데요.<br><br>
+
+                        하지만 어느새 지하철이나 버스를 둘러보면 유선 이어폰을 찾아보기 힘들게 되었습니다.<br><br>
+
+                        금세 일상으로 들어온 무선 이어폰, 그런데 브랜드도 너무 많고 가격도 천차만별입니다.<br>
+                        어떤 기준으로 무선 이어폰을 골라야 할지 노써치와 함께 알아보겠습니다.
+                    </span>
+                  </div>
+                </div>
+            
+                <div class="guide hidden" id="characteristic"> <!--블루투스 이어폰 특징-->
+                    <div class="bonMun">
+                        <h1>유선과의 차이점, 고가형 vs 저가형</h1>
+                        <br><br><br>
+                        <span>
+                          <h2>1. 유선 vs 무선</h2> <!--1. 유선 vs 무선-->
+                          <p style="color: rgba(0, 0, 0, 0.596);">
+                            <b>
+                                유선 대비 비싸지만 편리함<br>
+                                딜레이나 끊김 등의 단점이 있습니다.
+                            </b>
+                          </p>
+                      
+                          <ul>
+                            <br><br> <br>
+                            <li>
+                              <h3>
+                                무선이기 때문에 연결 안정성이 낮음<br>
+                                유선과 달리 충전이 필요합니다.                       
+                              </h3>
+                            </li>
+                            <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
+                            <span>
+                                선을 통해 소리를 바로 전달하는 유선 이어폰과 달리 무선이어폰은 블루투스 연결이 필수인데요.<br>
+                                무선으로 신호를 주고받다 보니 비슷한 가격대의 유선 이어폰과 비교하면 음질이 부족한 편이며,<br>
+                                만원 지하철이나 버스에서 중간중간 블루투스 연결이 끊어지거나 딜레이가 생기기도 합니다.<br><br>
+                                
+                                또한, 휴대폰이나 노트북에서 나오는 전원을 통해 작동하는 유선 이어폰과 달리,<br>
+                                무선 이어폰은 자체 배터리를 활용해야 하기 때문에 4~8시간 정도 사용하면 이어폰 전원이 꺼지며 충전이 필요하기도 합니다.
+                            </span>  
+                            <br><br><br>
+                            <li>
+                                <h3>
+                                    분실 위험이 높음<br>
+                                    비슷한 성능이라면 유선보다 비쌈
+                                </h3>
+                            </li>
+                            <span>
+                                선이 없다 보니 분실 위험도 높은 편입니다.<br>
+                                충전 케이스에서 이어폰을 꺼낼 때 떨어뜨리거나, 귀에서 빠질 때 여차하면 돌이킬 수 없는 장소(하수구, 지하철 문틈)에 빠지기도 합니다.<br>
+                                이런 점 때문에 SNS나 커뮤니티에 이어폰 한 쪽을 잃어버렸다는 글이 자주 올라오며,<br>
+                                한 쪽만 중고로 파는 경우도 많습니다.<br><br>
+
+                                또 조그만 이어폰 안에 무선 연결 안테나, 마이크, 배터리 등등 소형화된 부품이 많이 들어가다 보니<br>
+                                자연스레 동급의 유선 이어폰 대비 가격이 비싸집니다.
+                            </span>
+                            <br><br><br>
+                            <li>
+                                <h3>
+                                    무선이 주는 압도적인 편의성
+                                </h3>
+                            </li>
+                            <span>
+                                이 모든 단점에도 불구하고 무선 이어폰이 인기 있는 이유는 바로 압도적인 편의성 덕분입니다.<br><br>
+
+                                꼬여있는 이어폰 줄을 풀어주지 않아도 되며,<br>
+                                옷이나 가방 팔 등에 선이 걸릴 일도 없어 운동할 때에는 특히 편리합니다.<br><br>
+
+                                최근에는 스마트폰으로 음악을 듣는 경우가 대부분인데, 최신 스마트폰들은 이어폰 단자를 없애는 추세여서<br>
+                                유선 이어폰을 사용하기 점점 불편해진다는 점도 무선 이어폰이 대세가 된 이유 중 하나입니다
+                            </span>
+                            <br><br><br>
+                            <span>
+                                <h2>2. 고가형 vs 저가형</h2>
+                                <p style="color: rgba(0, 0, 0, 0.596);">
+                                <b>
+                                    소리 재생만 한다면 저가형도 충분<br>
+                                    디자인, 통화품질, 부가기능을 원한다면 고가형을 선택
+                                </b>
+                            </p>
+                            <ul>
+                                <li>
+                                    <h3>
+                                        저가형의 수준이 올라오면서<br>
+                                        음질은 상향 평준화되었습니다.
+                                    </h3>
+                                </li>
+                                <span>
+                                    무선 이어폰 초창기에는 애플, 삼성 등 일부 브랜드를 중심으로 20만 원이 넘는 고가 무선 이어폰만 출시되었지만,<br>
+                                    최근에는 시장이 커지면서 1만 원부터 40만 원까지 이어폰 가격이 천차만별이 되었습니다.<br><br>
+
+                                    이에 따라, 긍정적인 효과도 나타났는데, 저가형 제품들도 제조사들의 기술력이 높아져<br>
+                                    저가형 무선 이어폰의 단점으로 꼽혔던 음질 문제나 연결 끊김 문제가 보완되었다는 것입니다.<br><br>
+
+                                    지금은 저가형 이어폰을 구입해도 일정 수준 이상의 음질이나 연결 성능을 보장받을 수 있게 되었으며,<br>
+                                    실제로 저렴한 제품도 생각보다 괜찮은 음질을 나타낸다는 리뷰도 쉽게 찾아볼 수 있습니다.
+                                </span>
+                                <br><br><br>
+                                <li>
+                                    <h3>
+                                        소리 재생만 필요하다면 저가형도 충분합니다.<br>
+                                        사운드나 기능이 중요하다면 고가형 고려해볼만 합니다.
+                                    </h3>
+                                </li>
+                                <span>
+                                    앞서 얘기했듯이 제품 수준이 상향 평준화되었기 때문에<br>
+                                    소리를 재생하는 이어폰의 기능 자체가 필요하신 분은 저가형을 구매하셔도 만족스럽게 사용할 수 있습니다.<br>
+                                    최근에는 저가형 이어폰도 고가 이어폰에만 탑재되던 노이즈 캔슬링 기능이나<br>
+                                    통화 품질을 높여주는 마이크 노이즈 캔슬링 기능이 탑재된 제품도 많기 때문에<br> 
+                                    음질에 민감하지 않은 편이라면 저가형 제품을 구매하셔도 무방합니다.<br><br>
+
+                                    반면에, 이어폰에 10만 원 이상의 예산을 지불할 의향이 있고, 본인만의 사운드 취향이 확고하거나 제품의 디자인이 중요하신 분,<br>
+                                    혹은 통화품질이 매우 중요하시거나 ANC와 같은 부가 기능의 성능이 뛰어난 이어폰이 필요하신 분은 고가형 제품을 고려하는 것이 좋습니다.
+                                </span>
+                            </ul>
+                          </ul>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <div class="guide" id="earphones-guide"> <!--블루투스 이어폰 구매 가이드 메인-->
+                  <div class="bonMun">
+                    <h1>음질/음색/형태/노이즈캔슬링</h1>   <!--2. 음질/음색/형태/노이즈캔슬링-->
+                    <br><br><br>
+                    <span>
+                       <h2>1. 음질</h2>
+                       <p style="color: rgba(0, 0, 0, 0.596);">
+                        <b>
+                            음질을 결정하는 드라이버와 사운드 튜닝<br>
+                            다만, 스펙만으로 평가하기 어려움<br>
+                            구매 전 직접 들어보는 것을 추천
+                        </b>
+                       </p>
+
+                       <ul>
+                        <br><br><br>
+                        <li>
+                            <h3>
+                                풍부한 음 표현과 정확도 높은 소리를 내는<br>
+                                이어폰이 음질이 좋음
+                            </h3>
+                        </li>
+                        <span>
+                            이어폰은 신호를 전달받아 드라이버라고 하는 얇은 판이 진동하면서 소리를 내는 구조이기 때문에,<br>
+                            본래의 소리대비 왜곡이 발생하고, 표현할 수 있는 음의 범위에도 차이가 발생합니다.<br><br>
+
+                            이 왜곡이 적은 이어폰이 정확한 소리를 낼 수 있으며, 표현할 수 있는 음의 범위가 넓은 이어폰이<br>
+                            음질이 좋은 이어폰이라고 할 수 있습니다.<br><br>
+
+                            왜곡과 음의 범위는 소리를 내는 부품인 드라이버와<br>
+                            드라이버가 소리를 내는 형태를 조절하는 사운드 튜닝의 영향을 받습니다.
+                        </span>
+
+                        <br><br><br>
+                        <li>
+                            <h3>
+                                음질은 스펙으로 확인하기 어려움<br>
+                                민감하다면 직접 들어보거나 고가형을 고려
+                            </h3>
+                        </li>
+                        <span>
+                            음의 왜곡률을 나타내는 THD, 범위를 나타내는 주파수 그래프 등 소리를 측정하는 방법과 척도가 있긴 합니다만,<br>
+                            음질에 민감한 사람과 아닌사람이 있듯,<br>
+                            음질이 좋다 나쁘다 역시 개인 선호가 반영되는 주관적인 부분으로 같은 소리를 듣고도 평가가 달라지는 경우가 많습니다.<br><br>
+
+                            따라서, 내가 듣기 좋은 소리를 내는 이어폰이 나한테 좋은 음질의 이어폰이기 때문에,<br>
+                            직접 들어보거나 후기를 통해 간접적으로 확인하고 구매하는 것을 추천드립니다.
+                        </span>
+                       </ul>
+                    </span>
+
+                    <span>
+                        <h2>음색</h2>
+                        <p style="color: rgba(0, 0, 0, 0.596);">
+                        <b>
+                            음색은 취향의 영역,<br>
+                            대중적인 기준(하만타겟)이 있긴 하지만 정답은 아닙니다.
+                        </b>
+                    </p>
+                    
+                    <ul>
+                        <br><br><br>
+                        <li>
+                            <h3>
+                                음역대별 소리 조절이 음색을 결정
+                            </h3>
+                        </li>
+                        <span>
+                            음질이 소리의 선명한 정도라면, 음색은 소리의 색으로 사람의 목소리처럼 고유의 색깔이라고 볼 수 있습니다.<br><br>
+
+                            드럼같이 '둥' 울리는 소리는 저음역, 사람의 목소리나 피아노는 중음역,<br>
+                            바이올린이나 여성 보컬은 고음역대의 소리입니다.<br><br>
+
+                            각 음역대별 소리의 밸런스를 어떻게 조절했느냐가 음색을 결정하는데,<br>
+                            저음의 크기가 크면 소리가 따뜻하고 어둡게 들리는 경향이 있고, 고음의 크기가 크면 소리가 차갑고 밝은 느낌이 드는 경향이 있습니다.
+                        </span>
+
+                        <br><br><br>
+                        <li>
+                            <h3>
+                                취향의 영역인 음색<br>
+                                선호하는 음색이 있다면 들어보기
+                            </h3>
+                        </li>
+                        <span>
+                            정말 중요한 것은 대중적으로 가장 선호되는 타겟값(예를 들어 하만 타겟)이 있더라도<br>
+                            나에게 맞지 않을 수도 있다는 것입니다.<br><br>
+
+                            나에게 딱 맞는 음색을 찾기 위해선 직접 들어보는 것이 가장 좋습니다.<br><br>
+
+                            '둥둥'거리는 드럼 소리가 잘 들리는 것을 선호하는 사람도 있으며,<br>
+                            '징징'거리는 바이올린 소리가 잘 들리는 것을 선호하는 사람도 있습니다.<br><br>
+
+                            직접 들어보는 것이 어렵다면 최근에는 이어폰에서 나는 소리를 그대로 녹음하여 리뷰하는 유튜버들의 영상도 많으므로,<br>
+                            해당 영상을 참고하는 것을 추천드립니다.
+                        </span>
+                    </ul>
+                    </span>
+
+                    <span>
+                        <h2>3. 유닛 형태</h2>
+                        <p style="color: rgba(0, 0, 0, 0.596);">
+                            <b>
+                                이어폰 외부 소음을 잘 차단하여<br>
+                                소리에 집중할 수 있는 커널형이 대세
+                            </b>
+                        </p>
+
+                        <ul>
+                            <br><br><br>
+                            <li>
+                                <h3>
+                                    오픈형과 커널형<br>
+                                    저음 표현과 소음 차단 성능 차이
+                                </h3>
+                            </li>
+                            <span>
+                                커널형은 귀안에 실리콘이나 메모리폼 형태의 이어 팁을 집어넣어 귀를 밀폐하는 형태의 이어폰입니다.<br>
+                                이 형태를 패시브 노이즈 캔슬링이라고도 합니다.<br>
+                                바깥에서 들어오는 소리를 막아주어 소리에 더 집중할 수 있고, 둥둥 울리는 저음 표현이 우수하다는 장점이 있습니다.<br><br>
+
+                                반대로 귀를 완전히 막기 때문에 먹먹해지는 이압이 발생하며,<br>
+                                이어 팁과의 마찰로 인해 귀에 가려움증이나 염증이 생겨 불편하다는 후기도 일부 찾아볼 수 있습니다.<br><br>
+
+                                반면, 귀를 완전히 막지 않는 형태인 오픈형은 귀에 꽂는 커널형보다 착용감이 편하다는 의견이 많습니다.<br><br>
+
+                                다만, 귀에 걸치는 형태라 밀폐되지 않기 때문에 외부 소음이 잘 들리며, 소리가 흩어져 음질 측면에서 불리합니다.<br>
+                                또한 귓구멍에 안착되지 않기 때문에 밖으로 소리가 새는 누음 현상도 더 심한 편입니다.
+                            </span>
+
+                            <br><br><br>
+                            <li>
+                                <h3>
+                                    이압에 민감하지 않다면<br>
+                                    커널형 제품을 권장
+                                </h3>
+                            </li>
+                            <span>
+                                커널형은 오픈형 대비 차음성이 훌륭하여 외부 소음 없이 음악만을 즐길 수 있고,<br>
+                                최근 대세인 액티브 노이즈 캔슬링(ANC) 기능을 구현하기 좋습니다.<br>
+                                이러한 특성 때문에 현재 대부분의 이어폰이 커널형으로 출시되고 있습니다.<br><br>
+
+                                귀 형태가 오픈형만 낄 수 있다거나 특별히 먹먹한 이압에 민감하지 않으시다면<br>
+                                제품 선택의 폭이 넓은 커널형을 선택하시는 것을 추천합니다.
+                            </span>
+
+                        </ul>
+                    </span>
+
+                    <span>
+                        <h2>4. 액티브 노이즈 캔슬링</h2>
+                        <p style="color: rgba(0, 0, 0, 0.596);">
+                        <b>
+                            외부 소음 상쇄로 조용한 감상 환경 조성<br>
+                            1~2만원대 저가형에도 탑재되는 추세
+                        </b>
+                    </p>
+
+                    <ul>
+                        <br><br><br>
+                        <li>
+                            <h3>
+                                외부 소음과 반대 파형을 발생시켜<br>
+                                외부 소리를 차단하는 기능
+                            </h3>
+                        </li>
+                        <span>
+                            액티브 노이즈 캔슬링은 이어폰 외부의 마이크를 통해 들어오는 외부의 소음을 인식하여<br>
+                            반대되는 파장을 이어폰 내부 마이크로 재생해 외부 소음을 상쇄시켜주는 기능으로<br>
+                            귀를 밀폐하여 노이즈를 막아주는 패시브 노이즈 캔슬링보다 한 단계 더 나아간 기술입니다.<br><br>
+
+                            고가형 이어폰이 많이 탑재하여 대세가 되고 있는 기능으로<br>
+                            오로지 음악에 집중할 수 있다는 장점이 있습니다.<br>
+                            최근에는 ANC의 성능이 이어폰의 성능을 좌우하는 요소로 인식될 만큼 중요한 스펙이 되었습니다.<br><br>
+
+                            액티브 노이즈 캔슬링 기능 구현을 위해 가격이 비싼 고급 칩셋과 마이크가 필요하기 때문에 주로 고가형에 탑재된 기능입니다.
+                        </span>
+
+                        <br><br><br>
+                        <li>
+                            <h3>
+                                소음을 잘 막아줘 청력 보호 가능<br>
+                                대중교통을 자주 이용한다면 추천
+                            </h3>
+                        </li>
+                        <span>
+                            액티브 노이즈 캔슬링은 외부 소음을 차단하기 때문에 더 낮은 볼륨으로도 소리를 들을 수 있어 청력 보호에도 도움이 됩니다.<br>
+                            이 때문에 어떤 분들은 집중이 필요한 순간에 소리를 재생하지 않고 귀마개 대용으로 사용하기도 합니다.<br>
+                            지하철이나 버스와 같은 대중교통을 이용할 때 바깥의 소리가 시끄럽게 들어와 어쩔 수 없이 볼륨을 높여야 했다면<br>
+                            액티브 노이즈 캔슬링 기능이 있는 이어폰 구매를 고려하시는 것도 좋습니다.
+                        </span>
+
+                        <br><br><br>
+                        <li>
+                            <h3>
+                                완벽한 소리 차단은 안됨<br>
+                                재생시간이 짧아지고 사고 위험이 높아짐
+                            </h3>
+                        </li>
+                        <span>
+                            액티브 노이즈 캔슬링의 기능도 완벽하진 않은데요, 엔진 소리와 같은 일정한 중저음역대의 소음은 잘 차단하지만,<br>
+                            고음역인 사람의 목소리나, 사무실 키보드 소리, 갑작스러운 자동차 경적소리는 완벽하게 차단하지 못하니<br>
+                            이 점을 고려하시는 것이 좋습니다.<br><br>
+
+                            또한, 계속해서 외부 소음을 상쇄하는 소리를 재생해야 하므로 배터리를 사용하기 때문에 재생 가능 시간이 2~3시간가량 짧아집니다.<br><br>
+
+                            외부 소리를 상당 부분 차단하기 때문에 뒤에서 자동차가 다가오는 것을 모르거나, 횡단보도를 건널 때 차량 소리가 들리지 않아 주의가 필요합니다.<br><br>
+
+                            소음이 차단되는 것은 좋지만 너무 조용해져 먹먹한 느낌이 들어 불편하다는 의견도 일부 있으니,<br>
+                            액티브 노이즈 캔슬링 기능을 한 번도 사용해 보지 않았다면 미리 체험해 보는 것을 추천합니다.
+                        </span>
+                    </ul>
+                    </span>
+                  </div>
+                </div>
+            
+                <div class="guide hidden" id="sound"> <!--sound-->
+                    <div class="bonMun">
+                        <h1>통화 품질</h1>   <!--3.. 통화 품질-->
+                        <br><br><br>
+                        <span>
+                          <h2>1. 유닛형태</h2> 
+                          <p style="color: rgba(0, 0, 0, 0.596);">
+                            <b>
+                                입과 마이크 사이의 거리가 짧아야 유리함<br>
+                                기다란 막대가 있는 스템형이 좋은 편
+                            </b>
+                          </p>
+                      
+                          <ul>
+                            <br><br> <br>
+                            <li>
+                              <h3>
+                                통화 품질은 주로 발신 성능을 의미                       
+                              </h3>
+                            </li>
+                            <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
+                            <span>
+                                통화 품질이 좋다는 것은 내 말이 상대방에게 잘 전달되는지와 내가 상대방의 말을 잘 들을 수 있는지로 구분됩니다.<br>
+                                다만, 상대방의 말을 잘 듣는 것은 휴대폰의 신호 수신상태와 내 이어폰의 사운드 성능에 좌우되기 때문에,<br>
+                                일반적으로 무선 이어폰의 통화 품질이라고 하면 '내 말이 상대에게 얼마나 잘 전달되는가?'인 마이크의 성능을 의미합니다.
+                            </span>
+
+                            <br><br><br>
+                            <li>
+                                <h3>
+                                    일반적으로 입과 마이크의 거리가<br>
+                                    가까워야 통화 품질이 좋음
+                                </h3>
+                            </li>
+                            <span>
+                                통화 품질에서 가장 중요한 것은 입과 마이크의 거리가 얼마나 가까운 지입니다.<br><br>
+
+                                유선 이어폰을 쓸 때 상대방이 잘 안 들린다고 하면 자연스레 이어폰에 달려있는 마이크를 입에 갖다 대기도 했는데요.<br>
+                                마이크가 입에 가까울수록 목소리를 더 가까이서 잡아 내기 때문에 통화 품질을 높이는데 유리하기 때문입니다.
+                            </span>
+                          </ul>
+                        </span>
+
+                        <br><br><br>
+                    </div>
+                </div>
+
+            </div>
+
+
+        
+
+<!-----------------------------------맞춤추천 ------------------------------------->
+            <div class="guide hidden" id="recommend"> 
+                <div id="survey">
+                    <!-- 질문 1 -->
+                    <div class="question" id="q1">
+                        <h3>1. 어떤 용도의 노트북을 찾으시나요?</h3>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="purpose-low" name="purpose" value="low">
+                            <label for="purpose-low">문서 작업이나 학습용</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="purpose-mid" name="purpose" value="mid">
+                            <label for="purpose-mid">간단한 영상 편집, 중급사양의 게임용</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="purpose-high" name="purpose" value="high">
+                            <label for="purpose-high">고사양 게임, 그래픽 작업용</label>
+                        </div>
+                        <div>
+                            <button class="survey-button" onclick="nextQuestion('q1', 'q2', 'purpose')">다음</button>
+                        </div>
+                    </div>
+                
+                    <!-- 질문 2 -->
+                    <div class="question hidden" id="q2">
+                        <h3>2. 원하는 가격대를 선택해주세요</h3>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="price-100 or less" name="price" value="100 or less">
+                            <label for="price-100 or less">100만원 이하</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="price-150" name="price" value="150">
+                            <label for="price-150">최대 150만원</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="price-150 or more" name="price" value="150 or more">
+                            <label for="price-150 or more">150만원 이상</label>
+                        </div>
+                        <div>
+                            <button class="survey-button" onclick="nextQuestion('q2', 'q3', 'price')">다음</button>
+                        </div>
+                    </div>
+                
+                    <!-- 질문 3 -->
+                    <div class="question hidden" id="q3">
+                        <h3>3. 선호하는 제조사가 있으신가요?</h3>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="maker-domestic" name="maker" value="domestic">
+                            <label for="maker-domestic">A/S 걱정 없는 국내대기업</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="maker-foreign" name="maker" value="foreign">
+                            <label for="maker-foreign">A/S 걱정 없는 국내대기업</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="maker-no-preference" name="maker" value="no-preference">
+                            <label for="maker-no-preference">제조사 상관 없음</label>
+                        </div>
+                        <div>
+                            <button class="survey-button" onclick="nextQuestion('q3', 'q4', 'maker')">다음</button>
+                        </div>
+                    </div>
+                
+                    <!-- 질문 4 -->
+                    <div class="question hidden" id="q4">
+                        <h3>4. 선호하는 화면 크기는 어떻게 되시나요?</h3>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="monitor-14" name="monitor" value="14">
+                            <label for="monitor-14">14인치대 이하</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="monitor-15" name="monitor" value="15">
+                            <label for="monitor-15">15인치대 이상</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="monitor-no-preference" name="monitor" value="no-preference">
+                            <label for="monitor-no-preference">크기는 상관 없음</label>
+                        </div>
+                        <div>
+                            <button class="survey-button" onclick="nextQuestion('q4', 'q5', 'monitor')">다음</button>
+                        </div>
+                    </div>
+                
+                    <!-- 질문 5 마지막질문(제출함수)-->
+                    <div class="question hidden" id="q5">
+                        <h3>5. 가장 중요하게 생각하는 기준은 무엇인가요?</h3>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="priority-performance" name="priority" value="performance">
+                            <label for="priority-performance">성능이 가장 뛰어난 제품</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="priority-lightweight" name="priority" value="lightweight">
+                            <label for="priority-lightweight">가벼운 제품</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" id="priority-display" name="priority" value="display">
+                            <label for="priority-display">화질 좋은 제품</label>
+                        </div>
+                        <div>
+                            <button class="survey-button" onclick="submitSurvey()">제출</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- 설문 완료 화면 -->
+                <div id="result" class="hidden">
+                    <h3>설문이 완료되었습니다! 감사합니다.</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 섹션 -->
+        <footer class="footer">
+          <div class="list-wrapper">
+            <div class="list">
+              <div class="item-list">
+                <div class="item-3">
+                  <div class="text-wrapper-5">팀명</div> 
+                  <div class="guide-it">Guide It</div>
+                </div>
+                <div class="item-4">
+                  <div class="text-wrapper-6">팀원</div>
+                  <div class="text-wrapper-7">권혁찬, 정현우</div>
+                </div>
+                <div class="item-5">
+                  <div class="text-wrapper-8">주소</div>
+                  <p class="address">서울특별시 서대문구 가좌로 134, 명지전문대학교</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </footer>
+
+        
+      </div>
+    </div>
+
+    <script>
+      function nextGuide(next) {
+          // 모든 가이드 페이지를 숨김
+          document.querySelectorAll(".guide").forEach((guide) => {
+              guide.classList.add("hidden");
+          });
+
+          // 선택한 페이지만 표시
+          document.getElementById(next).classList.remove("hidden");
+      }
+
+  </script>
+  </body>
+</html>
 
         
       </div>
