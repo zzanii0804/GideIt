@@ -122,21 +122,65 @@
   .container .div-3 {
     position: absolute;
     width: 901px;
-    height: 401px;
+    height: 1000px;
     top: 93px;
     left: 139px;
     overflow: hidden;
   }
-  
-  .container .link-2 {
-    position: absolute;
-    width: 298px;
-    height: 200px;
-    top: 201px;
-    left: 603px;
-    text-align: center;
-  }
 
+
+  .category-button {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 0;
+    /* line-height: 1em; */
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    /* padding: 1em 1.5em; */
+    /* position: relative; */
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+  .category-button:before {
+   animation: opacityFallbackOut .5s step-end forwards;
+   backface-visibility: hidden;
+   background-color: #97979738;
+   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+   content: "";
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   transform: translateZ(0);
+   transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+   width: 100%;
+  } 
+  .category-button:hover:before {
+   animation: opacityFallbackIn 0s step-start forwards;
+   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }  
+  .category-button:after {
+   background-color: #FFFFFF;
+  }
+  .category-button span {
+   z-index: 1;
+   position: relative;
+  }
+  
   .container .category-image{
     height: 140px; 
     width: 140px;
@@ -146,7 +190,7 @@
   .container .text-wrapper-2 {
     width: 207px;
     height: 32px;
-    top: 143px;
+    top: 153px;
     left: 45px;
     font-family: "Roboto-Regular", Helvetica;
     font-weight: 400;
@@ -157,16 +201,53 @@
     position: absolute;
     letter-spacing: 0;
   }
-  
-  .container .link-3 {
+
+  .container .category-laptop {
     position: absolute;
     width: 298px;
     height: 200px;
-    top: 0;
-    left: 603px;
+    top: 50px;
+    left: 0px;
     text-align: center;
   }
-  
+    
+  .container .category-earphones {
+    position: absolute;
+    width: 298px;
+    height: 200px;
+    top: 50px;
+    left: 300px;
+    text-align: center;
+  }
+
+  .container .category-tablet {
+    position: absolute;
+    width: 298px;
+    height: 200px;
+    top: 50px;
+    left: 600px;
+    text-align: center;
+  }
+    
+  .container .category-tv {
+    position: absolute;
+    width: 298px;
+    height: 200px;
+    top: 301px;
+    left: 140px;
+    text-align: center;
+  }
+
+  .container .category-monitor {
+    position: absolute;
+    width: 298px;
+    height: 200px;
+    top: 301px;
+    left: 460px;
+    text-align: center;
+  }
+
+/*   
   .container .link-4 {
     position: absolute;
     width: 298px;
@@ -175,33 +256,8 @@
     left: 305px;
     text-align: center;
   }
-  
-  .container .link-5 {
-    position: absolute;
-    width: 298px;
-    height: 200px;
-    top: 201px;
-    left: 305px;
-    text-align: center;
-  }
-  
-  .container .link-6 {
-    position: absolute;
-    width: 298px;
-    height: 200px;
-    top: 201px;
-    left: -1px;
-    text-align: center;
-  }
-  
-  .container .link-7 {
-    position: absolute;
-    width: 298px;
-    height: 200px;
-    top: 0;
-    left: 0;
-    text-align: center;
-  }
+   */
+
   
   .container .footer {
     position: absolute;
