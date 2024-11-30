@@ -45,220 +45,6 @@
                   <h2><div class="text-wrapper-2">블루투스 구매 가이드</div></h2><br><br>
                   <div class="bonMun">
                     <span>
-                        우리
-                    </span>
-                  </div>
-                </div>
-            
-                <div class="guide hidden" id="cpuRam"> <!--cpu, 메모리-->
-                    <div class="bonMun">
-                        <h1>1대제목</h1>
-                        <br><br><br>
-                        <span>
-                          <h2>1. 중제목</h2> <!--1. 화면크기-->
-                          <p style="color: rgba(0, 0, 0, 0.596);">
-                            <b>
-                              설명
-                            </b>
-                          </p>
-                      
-                          <ul>
-                            <br><br> <br>
-                            <li>
-                              <h3>
-                                소제목                        
-                              </h3>
-                            </li>
-                            <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
-                            <span>
-                              본문
-                            </span>  
-                          </ul>
-                        </span>
-                    </div>
-                </div>
-
-            </div>
-        
-
-<!-----------------------------------맞춤추천 ------------------------------------->
-            <div class="guide hidden" id="recommend"> 
-                <div id="survey">
-                    <!-- 질문 1 -->
-                    <div class="question" id="q1">
-                        <h3>1. 어떤 용도의 노트북을 찾으시나요?</h3>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="purpose-low" name="purpose" value="low">
-                            <label for="purpose-low">문서 작업이나 학습용</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="purpose-mid" name="purpose" value="mid">
-                            <label for="purpose-mid">간단한 영상 편집, 중급사양의 게임용</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="purpose-high" name="purpose" value="high">
-                            <label for="purpose-high">고사양 게임, 그래픽 작업용</label>
-                        </div>
-                        <div>
-                            <button class="survey-button" onclick="nextQuestion('q1', 'q2', 'purpose')">다음</button>
-                        </div>
-                    </div>
-                
-                    <!-- 질문 2 -->
-                    <div class="question hidden" id="q2">
-                        <h3>2. 원하는 가격대를 선택해주세요</h3>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="price-100 or less" name="price" value="100 or less">
-                            <label for="price-100 or less">100만원 이하</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="price-150" name="price" value="150">
-                            <label for="price-150">최대 150만원</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="price-150 or more" name="price" value="150 or more">
-                            <label for="price-150 or more">150만원 이상</label>
-                        </div>
-                        <div>
-                            <button class="survey-button" onclick="nextQuestion('q2', 'q3', 'price')">다음</button>
-                        </div>
-                    </div>
-                
-                    <!-- 질문 3 -->
-                    <div class="question hidden" id="q3">
-                        <h3>3. 선호하는 제조사가 있으신가요?</h3>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="maker-domestic" name="maker" value="domestic">
-                            <label for="maker-domestic">A/S 걱정 없는 국내대기업</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="maker-foreign" name="maker" value="foreign">
-                            <label for="maker-foreign">A/S 걱정 없는 국내대기업</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="maker-no-preference" name="maker" value="no-preference">
-                            <label for="maker-no-preference">제조사 상관 없음</label>
-                        </div>
-                        <div>
-                            <button class="survey-button" onclick="nextQuestion('q3', 'q4', 'maker')">다음</button>
-                        </div>
-                    </div>
-                
-                    <!-- 질문 4 -->
-                    <div class="question hidden" id="q4">
-                        <h3>4. 선호하는 화면 크기는 어떻게 되시나요?</h3>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="monitor-14" name="monitor" value="14">
-                            <label for="monitor-14">14인치대 이하</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="monitor-15" name="monitor" value="15">
-                            <label for="monitor-15">15인치대 이상</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="monitor-no-preference" name="monitor" value="no-preference">
-                            <label for="monitor-no-preference">크기는 상관 없음</label>
-                        </div>
-                        <div>
-                            <button class="survey-button" onclick="nextQuestion('q4', 'q5', 'monitor')">다음</button>
-                        </div>
-                    </div>
-                
-                    <!-- 질문 5 마지막질문(제출함수)-->
-                    <div class="question hidden" id="q5">
-                        <h3>5. 가장 중요하게 생각하는 기준은 무엇인가요?</h3>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="priority-performance" name="priority" value="performance">
-                            <label for="priority-performance">성능이 가장 뛰어난 제품</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="priority-lightweight" name="priority" value="lightweight">
-                            <label for="priority-lightweight">가벼운 제품</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="priority-display" name="priority" value="display">
-                            <label for="priority-display">화질 좋은 제품</label>
-                        </div>
-                        <div>
-                            <button class="survey-button" onclick="submitSurvey()">제출</button>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- 설문 완료 화면 -->
-                <div id="result" class="hidden">
-                    <h3>설문이 완료되었습니다! 감사합니다.</h3>
-                </div>
-            </div>
-        </div>
-
-        <!-- 푸터 섹션 -->
-        <footer class="footer">
-          <div class="list-wrapper">
-            <div class="list">
-              <div class="item-list">
-                <div class="item-3">
-                  <div class="text-wrapper-5">팀명</div> 
-                  <div class="guide-it">Guide It</div>
-                </div>
-                <div class="item-4">
-                  <div class="text-wrapper-6">팀원</div>
-                  <div class="text-wrapper-7">권혁찬, 정현우</div>
-                </div>
-                <div class="item-5">
-                  <div class="text-wrapper-8">주소</div>
-                  <p class="address">서울특별시 서대문구 가좌로 134, 명지전문대학교</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer><!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide It</title>
-    <link rel="stylesheet" href="guide.css"/>
-    <link rel="stylesheet" href="surveyRadioButtons.css"/>
-    <script src="surveyRadioButtons.js"></script>
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="div">
-
-        <!-- 헤더 섹션 -->
-        <header class="header">
-          <div class="overlap-group">
-            <a href="../index.html"><img src="../image/로고.png" class="logo"></a>
-          </div>
-        </header>
-
-        <!-- 본문 섹션 -->
-        <div class="div-2">
-          
-            <!--메뉴바-->
-            <div class="item-2">
-                <ul class="navbar">
-                  <li><button class="button-menu" role="button" onclick="nextGuide('earphones-guide')"><span class="main-manu">구매가이드</span></button></li>
-                  <li><button class="button-menu" role="button" onclick="nextGuide('recommend')" ><span class="main-manu">맞춤추천</span></button></li>
-                </ul>
-
-                <ul class="navbar-1">
-                  <li><button class="button-menu" role="button" onclick="nextGuide('cpuRam')"><span class="guide-menu">CPU, 메모리</span></button></li>
-                  <li><button class="button-menu" role="button" onclick="nextGuide('gpuStorage')"><span class="guide-menu">그래픽카드, 저장장치</span></button></li>
-                  <li><button class="button-menu" role="button" onclick="nextGuide('display')"><span class="guide-menu">화면</span></button></li>
-                
-                </ul>
-            </div>
-
-              <!--메인 콘텐츠-->
-            <div>
-                <div class="guide" id="earphones-guide"> <!--노트북 구매 가이드 메인-->
-                  <img class="category-image" src="../image/블루투스이어폰.png" />
-                  <h2><div class="text-wrapper-2">블루투스 구매 가이드</div></h2><br><br>
-                  <div class="bonMun">
-                    <span>
                         스마트폰에서 이어폰 단자가 없어졌을 때 모두가 말도 안 되는 일이라 생각했고,<br>
                         처음 무선 이어폰이 나왔을 때에는 콩나물이라면서 비웃기도 했는데요.<br><br>
 
@@ -643,9 +429,244 @@
                         </span>
 
                         <br><br><br>
+
+                        <span>
+                            <h2> 2. 마이크 개수 & 기능</h2>
+                            <p style="color: rgba(0, 0, 0, 0.596);">
+                            <b>
+                                2개 이상의 마이크가 있는 제품을 추천<br>
+                                통화 품질이 중요하다면 마이크 기능 확인
+                            </b>
+                        </p>
+
+                        <ul>
+                            <br><br><br>
+                            <li>
+                                <h3>
+                                    단일 마이크는 노이즈를 걸러내지 못합니다.<br>
+                                    2개 이상 마이크가 있는 제품을 추천드립니다.
+                                </h3>
+                            </li>
+                            <span>
+                                마이크가 하나라면 외부의 소음과 사람의 말소리를 한 마이크로 듣기 때문에 모든 소리가 통화 상대방에게 전달됩니다.<br><br>
+
+                                반면, 마이크가 2개 이상 있다면 각각의 마이크가 외부 소음과 사람 목소리를 구분하여 외부 소음은 거르고<br>
+                                목소리만 상대방에게 전달할 수 있기 때문에 최근 출시되는 대부분의 무선 이어폰은 기본적으로 2개 이상의 마이크를 갖고 있습니다.<br><br>
+
+                                더 높은 통화 품질을 원하신다면 마이크 개수뿐만 아니라 빔포밍 마이크, 골전도 마이크 등의 기능도 함께 확인하시는 것이 좋습니다.
+                            </span>
+
+                            <br><br><br>
+                            <li>
+                                <h3>
+                                    통화품질은 다양한 기능을 탑재한<br>
+                                    스마트폰 제조사 제품이 좋은 편
+                                </h3>
+                            </li>
+                            <span>
+                                통화품질은 가격에 따라 차이가 많이 발생하며, 조용한 환경보다 주변 소음이 큰 환경에서 특히 더 체감이 됩니다.<br><br>
+
+                                또한, 제조사마다 통화품질과 관련돼 기술력의 차이도 있는데,<br>
+                                애플이나 삼성과 같이 스마트폰과 이어폰을 같이 제조하는 회사의 제품이 통화품질이 좋은 편입니다.<br><br>
+
+                                따라서, 이어폰으로 통화를 자주 한다면 통화품질 관련된 마이크 기능이 포함된 스마트폰 제조사의 제품을 구매하는 것을 추천드리며,<br>
+                                가성비 제품을 찾으신다면 마이크가 2개 이상 탑재된 스템형 제품을 선택하는 것이 통화품질이 좋을 가능성이 높습니다.
+                            </span>
+                        </ul>
+                        </span>
+                        <br><br><br>
                     </div>
                 </div>
 
+
+                <div class="guide hidden" id="sayong">
+                    <div class="bonMun">
+                        <h1>사용편의</h1>
+                        <h3>재생시간/연결성/조작편의/부가기능</h3>
+                        <br><br><br>
+                        <span>
+                          <h2>1. 재생 시간</h2> <!--1. 재생시간-->
+                          <p style="color: rgba(0, 0, 0, 0.596);">
+                            <b>
+                                이어폰과 케이스 재생 시간 모두 고려<br>
+                                충전이 편한 무선충전 제품 추천
+                            </b>
+                          </p>
+
+                          <ul>
+                            <br.<br><br>
+                            <li>
+                                <h3>
+                                    무선이어폰은 충전이 필수<br>
+                                    보통 4시간 이상은 사용 가능
+                                </h3>
+                            </li>
+
+                            <span>
+                                무선 이어폰은 자체 배터리로 작동하기 때문에 충전이 반드시 필요합니다.<br>
+                                배터리 잔량을 확인하지 않고 사용한다면,<br>
+                                한창 영화에 집중하고 있거나 통화를 할 때 이어폰의 전원이 꺼지는 일이 발생할 수 있습니다.<br><br>
+
+                                현재 판매 중인 무선 이어폰은 보통 약 4~8시간가량 사용이 가능한데,<br>
+                                통화를 자주 하거나 액티브 노이즈 캔슬링 기능을 켜놓는 경우에는 사용 가능 시간이 20~30퍼센트가량 짧아집니다.
+                            </span>
+
+                            <br><br><br>
+                            <li>
+                                <h3>
+                                    케이스 포함 24시간가량 사용 가능<br>
+                                    배터리 용량보다 시간을 확인
+                                </h3>
+                            </li>
+
+                            <span>
+                                무선 이어폰은 크기가 작아 넣을 수 있는 배터리 크기의 한계가 있어<br>
+                                재생 가능 시간이 짧은데 이를 보완하기 위해 이어폰을 넣고 다니는 케이스가 보조 배터리 역할을 합니다.<br><br>
+
+                                당연히 보조 배터리 역할을 하는 케이스도 2~3일에 한 번씩 충전을 해 줘야 합니다.<br><br>
+
+                                케이스의 배터리를 포함한 재생시간은 평균 24시간가량이며, 최근에는 대용량 배터리를 탑재해 200시간 이상 사용 가능한 제품도 있습니다.<br>
+                                다만, 이어폰 본체 자체의 재생 시간이 긴 것과 케이스 재생 시간이 긴 것은 별개이므로 혼동하지 않아야 합니다.<br><br>
+
+                                또 이어폰마다 사용하는 전력량이 다르므로 케이스의 배터리 용량보단<br>
+                                제조사가 공시하는 재생 가능한 시간이나 케이스로 이어폰이 몇 회 충전 가능한지를 나타내는 충전 횟수를 확인하는 것이 가장 좋습니다.
+                            </span>
+
+                            <br><br><br>
+                            <li>
+                                <h3>
+                                    대부분 1시간~1시간 반 이내에 충전됨<br>
+                                    10분 충전에 1시간 가량 사용 가능
+                                </h3>
+                            </li>
+
+                            <span>
+                                무선 이어폰 케이스 배터리 용량은 500mAh 정도로 크지 않기 때문에 1시간 반 정도면 완전히 충전되며,<br>
+                                이어폰도 케이스에 넣으면 1시간 내외로 완전히 충전됩니다.<br><br>
+
+                                제품 상세 페이지를 보다 보면 '10분 충전 시 1시간 사용 가능'이라는 문구가 있는 경우가 있는데,<br>
+                                해당 문구가 없다고 해도 케이스에 10분~15분가량 꽂아 놓으면 대부분 1시간 내외로 사용할 수 있습니다.
+                            </span>
+                          </ul>
+                        </span>
+                        <br><br><br>
+
+                        <span>
+                            <h2>2. 연결 성능</h2>
+                            <p style="color: rgba(0, 0, 0, 0.596);">
+                                <b>
+                                    오토페어링, 듀얼 연결 방식은 대부분 지원<br>
+                                    여러 기기를 사용한다면 멀티페어링을 확인
+                                </b>                 
+                              </p>
+
+                              <ul>
+                                <br><br><br>
+                                <li>
+                                  <h3>
+                                    블루투스 특성상 끊어짐은 불가피함              
+                                  </h3>
+                                </li>
+                                <span>
+                                    만원 지하철이나 버스에서 블루투스 연결이 끊기는 경우가 있으실 텐데요.<br><br>
+
+                                    블루투스는 무선으로 데이터를 전달받기 때문에 끊김 현상을 완전히 없애는 것은 불가능합니다.<br>
+                                    (끊기는 것이 페어링 종료를 의미하는 것이 아니기 때문에 둔감한 분들은 끊김을 느끼지 못하기도 합니다.<br><br>
+                                    
+                                    특히 와이파이와 같은 2.4Ghz의 주파수 대역을 사용하기 때문에 더 자주 끊기는 태생적 한계를 가지고 있습니다.<br><br>
+                                    
+                                    실제로 10개 이상의 무선 이어폰을 착용하고 테스트해 본 결과,<br>
+                                    사용 환경에 따른 차이는 있으나 모든 제품이 평균적으로 1~2회 정도 연결이 잠시 끊기는 문제가 발생했습니다.
+                                </span>
+
+                                <br><br><br>
+                                <li>
+                                    <h3>
+                                        오토 페어링은 대부분 가능<br>
+                                        여러 기기와 사용한다면 멀티페어링 체크 
+                                    </h3>
+                                </li>
+                                <span>
+                                    무선 이어폰을 휴대폰, 태블릿, 노트북 등 여러 기기에 연결하여 사용한다면 멀티페어링이 유용합니다.<br><br>
+
+                                    무선 이어폰은 휴대폰, 태블릿, 노트북마다 고유한 블루투스 프로필을 기억하여 해당 기기와 1:1로 페어링 되는 것이 원칙이지만<br>
+                                    멀티페어링이 가능하면 여러 대의 기기를 기억하고 바로 전환할 수 있습니다.<br><br>
+
+                                    멀티 페어링 기능이 없다면 재생하고자 하는 기기를 바꿀 때마다 매번 새롭게 페어링 해야 하기 때문에 상당히 불편합니다.<br>
+                                    여러 기기에 이어폰을 편하게 사용하고 싶다면 추천하는 기능이며, 저가형 제품에선 거의 찾아볼 수 없는 기능입니다.
+                                </span>
+
+                                <br><br><br>
+                                <li>
+                                    <h3>
+                                        게임을 자주한다면 게임모드(저지연모드) 체크<br>
+                                        지연시간을 줄일 수 있음
+                                    </h3>
+                                </li>
+                                <span>
+                                    무선 연결 시 필연적으로 화면과 귀로 듣는 소리 간의 시간 차이가 발생하며, 이를 지연 시간이라 합니다.<br><br>
+
+                                    영상 서비스인 유튜브나 넷플릭스는 자체 싱크 보정 기능이 있어 지연 시간을 조절하여 줍니다.<br><br>
+
+                                    하지만 FPS나 리듬게임을 하는 등 찰나의 소리가 중요한 순간에는 이 지연시간이 상당히 크게 느껴집니다.<br>
+                                    지연시간은 고지하지 않는 경우가 많으며, 세팅 환경에 따라 차이가 많이 나기 때문에 스펙으로 확인하기는 어렵지만 지연시간에 민감하다면,<br>
+                                    이어폰 자체에서 지연 시간을 줄여주는 저 지연 모드(=게임 모드)가 포함된 제품을 구매하는 것이 좋습니다.
+                                </span>
+
+                              </ul>
+                        </span>
+                        <br><br><br>
+
+                        <span>
+                            <h2>3. 조작 편의</h2>
+                            <p style="color: rgba(0, 0, 0, 0.596);">
+                                <b>
+                                    터치식이 편리하다는 의견이 많음<br>
+                                    조작 가능한 범위는 제각각
+                                </b>
+                              </p>
+
+                              <ul>
+                                <br><br><br>
+                                <li>
+                                    <h3>
+                                        터치식과 버튼식
+                                    </h3>
+                                </li>
+                                <span>
+                                    다음 노래를 듣고 싶거나, 일시정지가 필요할 때마다 휴대폰을 꺼내 조작해야 했다면<br>
+                                    무선이어폰이 지금처럼 대세가 되지 못했을 겁니다.<br><br>
+
+                                    주머니나 가방에서 휴대폰을 꺼내지 않고도 이어폰 본체를 통해 재생,<br>
+                                    곡 넘기기 등을 컨트롤할 수 있는 덕분에 무선이어폰이 더 막강한 편의성을 갖추게 되었습니다.<br><br>
+
+                                    이어폰으로 소리를 컨트롤하는 방식은 버튼식, 터치식이 있습니다.<br>
+                                    버튼식은 오차 없이 정확한 조작이 가능하지만 버튼을 누를 때마다 귀가 같이 눌리고 딸깍거리는 소리가 들려 불편하기도 합니다.<br><br>
+
+                                    터치식은 귀를 압박하지 않고 가볍게 조작이 가능하지만 민감도나 위치에 따라 오동작을 일으키는 경우도 있습니다.<br>
+                                    어떤 것이 더 편한지는 의견차가 있지만 대체로 터치식이 더 편리하다는 의견이 많습니다.<br><br>
+
+                                    (최근 출시되는 대부분의 이어폰은 터치식입니다.)
+                                </span>
+
+                                <br><br><br>
+                                <li>
+                                    <h3>
+                                        재생/일시정지, 곡 넘기기 있어야 편리함
+                                    </h3>
+                                </li>
+                                <span>
+                                    이어폰 본체를 조작하여 전화 받기/끊기, 재생/일시정지, 음량 조절, 다음곡/이전곡과 같은 컨트롤을 할 수 있습니다.<br>
+                                    노이즈 캔슬링 기능을 켜고 끄거나 단계를 조절하는 것도 가능합니다.<br><br>
+
+                                    실제 사용 시 볼륨 조절은 스마트폰을 꺼내지 않도 주머니에 손을 넣어 사이드 버튼으로 조절 가능하지만,<br>
+                                    재생/일시정지나 곡넘기기는 스마트폰 화면을 켜야 조절 가능하기 때문에 스마트폰을 열지 않고도 편하게 사용하기 위해서는 재생/일시정지,<br>
+                                    다음곡/이전곡 재생 컨트롤이 가능한 제품을 선택하는 것이 좋습니다.
+                                </span>
+                              </ul>
+                        </span>
+                        <br><br><br>
+                    </div>
             </div>
 
 
@@ -783,25 +804,6 @@
             </div>
           </div>
         </footer>
-
-        
-      </div>
-    </div>
-
-    <script>
-      function nextGuide(next) {
-          // 모든 가이드 페이지를 숨김
-          document.querySelectorAll(".guide").forEach((guide) => {
-              guide.classList.add("hidden");
-          });
-
-          // 선택한 페이지만 표시
-          document.getElementById(next).classList.remove("hidden");
-      }
-
-  </script>
-  </body>
-</html>
 
         
       </div>
