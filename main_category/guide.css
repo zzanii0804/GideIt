@@ -1,15 +1,15 @@
-/* @media (max-width: 480px) {
+@media (max-width: 480px) {
     .container {
-      flex-direction: column;
-      padding: 0 10px;
+      flex-direction: column; /* 세로 정렬 */
+      padding: 0 10px; /* 좌우 여백 */
     }
     .category-image {
-      max-width: 100px;
+      max-width: 100px; /* 더 작은 이미지 크기 */
     }
     .div-3 {
       width: 100%;
     }
-  } */
+  }
 
   /* js로 조절 */
   .hidden { display: none !important;}
