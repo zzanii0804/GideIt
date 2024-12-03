@@ -32,8 +32,8 @@
 
                 <ul class="navbar-1">
                   <li><button class="button-menu" role="button" onclick="nextGuide('Display')"><span class="guide-menu">화면</span></button></li>
-                  <li><button class="button-menu" role="button" onclick="nextGuide('HwaZil')"><span class="guide-menu">그래픽카드, 저장장치</span></button></li>
-                  <li><button class="button-menu" role="button" onclick="nextGuide('PyeonUiheSung')"><span class="guide-menu">화면</span></button></li>
+                  <li><button class="button-menu" role="button" onclick="nextGuide('HwaZil')"><span class="guide-menu">화질</span></button></li>
+                  <li><button class="button-menu" role="button" onclick="nextGuide('PyeonUiheSung')"><span class="guide-menu">사용편의</span></button></li>
                 
                 </ul>
             </div>
@@ -287,7 +287,7 @@
                     </div>
                 </div>
 
-                <div class="guide hidden" id="gpuStorage"> <!--그래픽카드, 저장장치-->
+                <div class="guide hidden" id="HwaZil"> <!--그래픽카드, 저장장치-->
                     <div class="bonMun">
                       <h1>화질</h1>
                       <br><br><br>
@@ -563,7 +563,7 @@
                                 DP Alt Mode가 있는지 확인                        
                               </h3>
                             </li>
-                            <img class="category-image" src="image/화면_크기.webp" style="width: 450px;"/><br><br>
+                            <!-- <img class="category-image" src="image/화면_크기.webp" style="width: 450px;"/><br><br> -->
                             <span>
                                 최근 업무용으로 노트북을 사용하시는 분들이 점차 많아지고 있는데요,<br>
                                 모니터에 USB-C 타입 포트가 있더라도 노트북에 *DP Alt Mode 기능이 탑재되어 있지 않으면, USB-C 포트로 모니터와 연결할 수 없습니다.<br><br>
@@ -582,7 +582,7 @@
                                 USB 허브 기능이 탑재 된 제품도 고려                       
                               </h3>
                             </li>
-                            <img class="category-image" src="image/화면_크기.webp" style="width: 450px;"/><br><br>
+                            <!-- <img class="category-image" src="image/화면_크기.webp" style="width: 450px;"/><br><br> -->
                             <span>
                                 컴퓨터 본체에 USB 장치(키보드/마우스 등)를 연결하기 힘든 경우나 USB 포트 수가 적은 노트북을 사용하는 경우 USB 허브 기능이 매우 유용한데요.<br><br>
 
@@ -732,15 +732,15 @@
                         <h3>1. 어떤 용도의 노트북을 찾으시나요?</h3>
                         <div class="form_radio_btn">
                             <input type="radio" id="purpose-low" name="purpose" value="low">
-                            <label for="purpose-low">문서 작업이나 학습용</label>
+                            <label for="purpose-low">일반,사무용</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="purpose-mid" name="purpose" value="mid">
-                            <label for="purpose-mid">간단한 영상 편집, 중급사양의 게임용</label>
+                            <label for="purpose-mid">게임용</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="purpose-high" name="purpose" value="high">
-                            <label for="purpose-high">고사양 게임, 그래픽 작업용</label>
+                            <label for="purpose-high">그래픽작업용</label>
                         </div>
                         <div>
                             <button class="survey-button" onclick="nextQuestion('q1', 'q2', 'purpose')">다음</button>
@@ -749,19 +749,23 @@
                 
                     <!-- 질문 2 -->
                     <div class="question hidden" id="q2">
-                        <h3>2. 원하는 가격대를 선택해주세요</h3>
+                        <h3>2. 원하는 가격대를 선택해주세요.</h3>
                         <div class="form_radio_btn">
                             <input type="radio" id="price-100 or less" name="price" value="100 or less">
-                            <label for="price-100 or less">100만원 이하</label>
+                            <label for="price-100 or less">가격은 상관없어요.</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="price-150" name="price" value="150">
-                            <label for="price-150">최대 150만원</label>
+                            <label for="price-150">최대 50만원</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="price-150 or more" name="price" value="150 or more">
-                            <label for="price-150 or more">150만원 이상</label>
+                            <label for="price-150 or more">최대 80만원</label>
                         </div>
+                        <div class="form_radio_btn">
+                          <input type="radio" id="price-150 or more" name="price" value="150 or more">
+                          <label for="price-150 or more">최대 30만원</label>
+                      </div>
                         <div>
                             <button class="survey-button" onclick="nextQuestion('q2', 'q3', 'price')">다음</button>
                         </div>
@@ -769,61 +773,54 @@
                 
                     <!-- 질문 3 -->
                     <div class="question hidden" id="q3">
-                        <h3>3. 선호하는 제조사가 있으신가요?</h3>
+                        <h3>3. 선호하는 화면 크기가 있으신가요?</h3>
                         <div class="form_radio_btn">
                             <input type="radio" id="maker-domestic" name="maker" value="domestic">
-                            <label for="maker-domestic">A/S 걱정 없는 국내대기업</label>
+                            <label for="maker-domestic">24인치급</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="maker-foreign" name="maker" value="foreign">
-                            <label for="maker-foreign">A/S 걱정 없는 국내대기업</label>
+                            <label for="maker-foreign">27인치급</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="maker-no-preference" name="maker" value="no-preference">
-                            <label for="maker-no-preference">제조사 상관 없음</label>
+                            <label for="maker-no-preference">32인치급</label>
                         </div>
+                        <div class="form_radio_btn">
+                          <input type="radio" id="maker-no-preference" name="maker" value="no-preference">
+                          <label for="maker-no-preference">크기는 상관없어요</label>
+                      </div>
                         <div>
                             <button class="survey-button" onclick="nextQuestion('q3', 'q4', 'maker')">다음</button>
                         </div>
                     </div>
                 
-                    <!-- 질문 4 -->
-                    <div class="question hidden" id="q4">
-                        <h3>4. 선호하는 화면 크기는 어떻게 되시나요?</h3>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="monitor-14" name="monitor" value="14">
-                            <label for="monitor-14">14인치대 이하</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="monitor-15" name="monitor" value="15">
-                            <label for="monitor-15">15인치대 이상</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="monitor-no-preference" name="monitor" value="no-preference">
-                            <label for="monitor-no-preference">크기는 상관 없음</label>
-                        </div>
-                        <div>
-                            <button class="survey-button" onclick="nextQuestion('q4', 'q5', 'monitor')">다음</button>
-                        </div>
-                    </div>
                 
-                    <!-- 질문 5 마지막질문(제출함수)-->
-                    <div class="question hidden" id="q5">
-                        <h3>5. 가장 중요하게 생각하는 기준은 무엇인가요?</h3>
+                    <!-- 질문 4 마지막질문(제출함수)-->
+                    <div class="question hidden" id="q4">
+                        <h3>4. 비슷한 제품이라면 어떤 기준으로 추천할까요?</h3>
                         <div class="form_radio_btn">
                             <input type="radio" id="priority-performance" name="priority" value="performance">
-                            <label for="priority-performance">성능이 가장 뛰어난 제품</label>
+                            <label for="priority-performance">화면크기가 큰 제품</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="priority-lightweight" name="priority" value="lightweight">
-                            <label for="priority-lightweight">가벼운 제품</label>
+                            <label for="priority-lightweight">화질이 뛰어난 제품으로 </label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="priority-display" name="priority" value="display">
-                            <label for="priority-display">화질 좋은 제품</label>
+                            <label for="priority-display">게임할 때 잔상이 적은 제품</label>
                         </div>
+                        <div class="form_radio_btn">
+                          <input type="radio" id="priority-display" name="priority" value="display">
+                          <label for="priority-display">부가기능이 다양한 제품으로 추천해주세요</label>
+                      </div>
+                      <div class="form_radio_btn">
+                        <input type="radio" id="priority-display" name="priority" value="display">
+                        <label for="priority-display">포트구성이 다양한 제품으로 추천해주세요.</label>
+                      </div>
                         <div>
-                            <button class="survey-button" onclick="submitSurvey()">제출</button>
+                            <button class="survey-button" onclick="monitorsubmitSurvey()">제출</button>
                         </div>
                     </div>
                 </div>

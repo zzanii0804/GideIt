@@ -31,9 +31,10 @@
                 </ul>
 
                 <ul class="navbar-1">
-                  <li><button class="button-menu" role="button" onclick="nextGuide('cpuRam')"><span class="guide-menu">CPU, 메모리</span></button></li>
-                  <li><button class="button-menu" role="button" onclick="nextGuide('gpuStorage')"><span class="guide-menu">그래픽카드, 저장장치</span></button></li>
-                  <li><button class="button-menu" role="button" onclick="nextGuide('display')"><span class="guide-menu">화면</span></button></li>
+                  <li><button class="button-menu" role="button" onclick="nextGuide('hwazil')"><span class="guide-menu">화질</span></button></li>
+                  <li><button class="button-menu" role="button" onclick="nextGuide('size')"><span class="guide-menu">TV 크기</span></button></li>
+                  <li><button class="button-menu" role="button" onclick="nextGuide('buga')"><span class="guide-menu">부가기능</span></button></li>
+                  <li><button class="button-menu" role="button" onclick="nextGuide('tip')"><span class="guide-menu">기타 TIP</span></button></li>
                 
                 </ul>
             </div>
@@ -55,7 +56,7 @@
                   </div>
                 </div>
             
-                <div class="guide hidden" id="cpuRam"> <!--cpu, 메모리-->
+                <div class="guide hidden" id="hwazil"> <!--cpu, 메모리-->
                     <div class="bonMun">
                         <h1>화질</h1>
                         <br><br><br>
@@ -75,7 +76,7 @@
                                 현재 대부분의 TV는 LED TV                       
                               </h3>
                             </li>
-                            <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
+                            <!-- <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br> -->
                             <span>
                                 초창기의 볼록한 CRT TV → 대형 TV를 보급한 PDP → 화질을 한 단계 올린 LCD → 백라이트가 LED로 바뀌며 두께가 얇아진 LED → OLED로 기술의 발전이 있었는데요.<br><br>
 
@@ -91,7 +92,7 @@
                                 가성비가 좋은 LED TV                      
                               </h3>
                             </li>
-                            <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
+                            <!-- <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br> -->
                             <span>
                                 LED TV는 LCD 패널에 LED 백라이트 광원을 이용하는 방식입니다.<br><br>
 
@@ -107,7 +108,7 @@
                                 나노셀과 QLED는 진화된 LED                      
                               </h3>
                             </li>
-                            <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
+                            <!-- <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br> -->
                             <span>
                                 여기에 한 단계 진화된 나노셀과 QLED TV(QD-LCD)는 LED 백라이트 방식은 동일하지만,<br>
                                 ① LG 나노셀 : 패널에 1nm 크기의 극미세 분자를 적용<br>
@@ -122,7 +123,7 @@
                                 고려하여 선택                      
                               </h3>
                             </li>
-                            <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br>
+                            <!-- <img class="category-image" src="image/이미지.webp" style="width: 450px;"/><br><br> -->
                             <span>
                                 ① 최고 수준의 화질을 원하고 가격에 대한 부담이 없다면 OLED<br><br>
 
@@ -321,7 +322,7 @@
                     </div>
                 </div>
 
-                <div class="guide hidden" id="gpuStorage"> <!--그래픽카드, 저장장치-->
+                <div class="guide hidden" id="size"> <!--그래픽카드, 저장장치-->
                     <div class="bonMun">
                       <h1>해상도와 시청거리에 맞는 TV 크기</h1>
                       <br><br><br>
@@ -448,7 +449,7 @@
                     </div>
                 </div>
 
-                <div class="guide hidden" id="HueDaeSung"> <!--휴대성-->
+                <div class="guide hidden" id="buga"> <!--휴대성-->
                     <div class="bonMun">
                       <h1>부가기능</h1>
                       <h3>사운드 / 스마트기능 / 소비전력</h3>
@@ -591,7 +592,7 @@
                     </div>
                 </div>
 
-                <div class="guide hidden" id="PyeonUiheSung"> <!--사용 편의성-->
+                <div class="guide hidden" id="tip"> <!--사용 편의성-->
                     <div class="bonMun">
                       <h1>기타 TIP</h1>
                       <h3>해외직구 / 중소기업 제품 / 모델코드 읽는 법</h3>
@@ -690,19 +691,23 @@
                 <div id="survey">
                     <!-- 질문 1 -->
                     <div class="question" id="q1">
-                        <h3>1. 어떤 용도의 노트북을 찾으시나요?</h3>
+                        <h3>1. TV의 사용목적은 무엇입니까?</h3>
                         <div class="form_radio_btn">
                             <input type="radio" id="purpose-low" name="purpose" value="low">
-                            <label for="purpose-low">문서 작업이나 학습용</label>
+                            <label for="purpose-low">셋톱박스로 일반 TV 방송 시청</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="purpose-mid" name="purpose" value="mid">
-                            <label for="purpose-mid">간단한 영상 편집, 중급사양의 게임용</label>
+                            <label for="purpose-mid">OTT(유튜브/넷플릭스) 시청용</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="purpose-high" name="purpose" value="high">
-                            <label for="purpose-high">고사양 게임, 그래픽 작업용</label>
+                            <label for="purpose-high">고화질 콘텐츠 시청</label>
                         </div>
+                        <div class="form_radio_btn">
+                          <input type="radio" id="purpose-high" name="purpose" value="high">
+                          <label for="purpose-high">콘솔게임기를 TV와 연결하여 사용</label>
+                      </div>
                         <div>
                             <button class="survey-button" onclick="nextQuestion('q1', 'q2', 'purpose')">다음</button>
                         </div>
@@ -710,19 +715,23 @@
                 
                     <!-- 질문 2 -->
                     <div class="question hidden" id="q2">
-                        <h3>2. 원하는 가격대를 선택해주세요</h3>
+                        <h3>2. 어디에 설치할 TV를 찾고 계신가요?</h3>
                         <div class="form_radio_btn">
                             <input type="radio" id="price-100 or less" name="price" value="100 or less">
-                            <label for="price-100 or less">100만원 이하</label>
+                            <label for="price-100 or less">침실이나 10평 대 거실</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="price-150" name="price" value="150">
-                            <label for="price-150">최대 150만원</label>
+                            <label for="price-150">20평 대 거실</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="price-150 or more" name="price" value="150 or more">
-                            <label for="price-150 or more">150만원 이상</label>
+                            <label for="price-150 or more">30평 대 거실</label>
                         </div>
+                        <div class="form_radio_btn">
+                          <input type="radio" id="price-150 or more" name="price" value="150 or more">
+                          <label for="price-150 or more">40평 이상의 거실</label>
+                      </div>
                         <div>
                             <button class="survey-button" onclick="nextQuestion('q2', 'q3', 'price')">다음</button>
                         </div>
@@ -730,63 +739,44 @@
                 
                     <!-- 질문 3 -->
                     <div class="question hidden" id="q3">
-                        <h3>3. 선호하는 제조사가 있으신가요?</h3>
+                        <h3>3. 선호하는 브랜드가 있으신가요?</h3>
                         <div class="form_radio_btn">
                             <input type="radio" id="maker-domestic" name="maker" value="domestic">
-                            <label for="maker-domestic">A/S 걱정 없는 국내대기업</label>
+                            <label for="maker-domestic">대기업 제품</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="maker-foreign" name="maker" value="foreign">
-                            <label for="maker-foreign">A/S 걱정 없는 국내대기업</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="maker-no-preference" name="maker" value="no-preference">
-                            <label for="maker-no-preference">제조사 상관 없음</label>
+                            <label for="maker-foreign">가성비 제품</label>
                         </div>
                         <div>
                             <button class="survey-button" onclick="nextQuestion('q3', 'q4', 'maker')">다음</button>
                         </div>
                     </div>
                 
-                    <!-- 질문 4 -->
+                    <!-- 질문 4 마지막질문(제출함수)-->
                     <div class="question hidden" id="q4">
-                        <h3>4. 선호하는 화면 크기는 어떻게 되시나요?</h3>
+                        <h3>4. TV구매시 어떤 것이 가장 중요하신가요?</h3>
                         <div class="form_radio_btn">
                             <input type="radio" id="monitor-14" name="monitor" value="14">
-                            <label for="monitor-14">14인치대 이하</label>
+                            <label for="monitor-14">화질보다 크기가 더 중요해요!</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="monitor-15" name="monitor" value="15">
-                            <label for="monitor-15">15인치대 이상</label>
+                            <label for="monitor-15">크기보다는 화질이 더 중요해요!</label>
                         </div>
                         <div class="form_radio_btn">
                             <input type="radio" id="monitor-no-preference" name="monitor" value="no-preference">
-                            <label for="monitor-no-preference">크기는 상관 없음</label>
+                            <label for="monitor-no-preference">이왕이면 저렴하면 좋겠어요!</label>
                         </div>
+                        <div class="form_radio_btn">
+                          <input type="radio" id="monitor-no-preference" name="monitor" value="no-preference">
+                          <label for="monitor-no-preference">사운드 성능이 뛰어났으면 좋겠어요!</label>
+                      </div>
                         <div>
-                            <button class="survey-button" onclick="nextQuestion('q4', 'q5', 'monitor')">다음</button>
+                          <button class="survey-button" onclick="TVsubmitSurvey()">제출</button>
                         </div>
                     </div>
                 
-                    <!-- 질문 5 마지막질문(제출함수)-->
-                    <div class="question hidden" id="q5">
-                        <h3>5. 가장 중요하게 생각하는 기준은 무엇인가요?</h3>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="priority-performance" name="priority" value="performance">
-                            <label for="priority-performance">성능이 가장 뛰어난 제품</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="priority-lightweight" name="priority" value="lightweight">
-                            <label for="priority-lightweight">가벼운 제품</label>
-                        </div>
-                        <div class="form_radio_btn">
-                            <input type="radio" id="priority-display" name="priority" value="display">
-                            <label for="priority-display">화질 좋은 제품</label>
-                        </div>
-                        <div>
-                            <button class="survey-button" onclick="submitSurvey()">제출</button>
-                        </div>
-                    </div>
                 </div>
             
                 <!-- 설문 완료 화면 -->
